@@ -7,8 +7,8 @@ from utils import *
 from scipy.optimize import fmin_l_bfgs_b
 from PIL import Image
 
-style_path = 'p1.jpg'
-content_path = 'm1.jpg'
+style_path = 'p3.jpg'
+content_path = 'm2.jpg'
 
 height = 512
 width = 512
@@ -54,9 +54,10 @@ content_image_features=layer_features[0,:,:,:]
 combination_features=layer_features[2,:,:,:]
 loss+=content_weight*content_loss(content_image_features,combination_features)
 
-feature_layers = ['block1_conv2', 'block2_conv2',
-                  'block3_conv3', 'block4_conv3',
-                  'block5_conv3']
+feature_layers = ['block1_conv1', 'block1_conv2', 'block2_conv1', 'block2_conv2',
+                  'block3_conv1', 'block3_conv2', 'block3_conv3', 
+                  'block4_conv1', 'block4_conv2', 'block4_conv3',
+                  'block5_conv1', 'block5_conv2', 'block5_conv3']
 
 for layer_name in feature_layers:
     layer_features=layers[layer_name]
