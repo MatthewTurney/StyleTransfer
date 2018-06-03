@@ -7,8 +7,8 @@ from utils import *
 from scipy.optimize import fmin_l_bfgs_b
 from PIL import Image
 
-style_path = 'vector_colored.jpg'
-content_path = 'm2.jpg'
+style_path = 'p3.jpg'
+content_path = 'm1.jpg'
 
 height = 512
 width = 512
