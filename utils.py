@@ -29,3 +29,9 @@ def eval_loss_and_grads(x, height, width, f_outputs):
     loss_value = outs[0]
     grad_values = outs[1].flatten().astype('float64')
     return loss_value, grad_values
+
+def crop(pic):
+    hw = pic.size[0] / 2
+    hh = pic.size[1] / 2
+    mh = min(hw,hh)
+    return pic.crop((hw - mh, hh - mh, hw + mh, hh + mh))

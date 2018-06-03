@@ -109,7 +109,7 @@ def total_variation_loss(x):
     avg = 0.5 * (C.reduce_mean(C.square(dv)) + C.reduce_mean(C.square(dh)))
     return avg
 
-style_path = 'loneliness_of_autumn.jpg'
+style_path = 'p3.jpg'
 content_path = 'matt_seattle.jpg'
 
 start_from_random = False
@@ -119,11 +119,12 @@ decay = 0.5
 
 outer = 10
 inner = 30
-SIZE = 600
+SIZE = 512
 
 SHIFT = np.reshape([103.939, 116.779, 123.68], (3, 1, 1)).astype('f')
 
 def load_image(path):
+    with Image.open(path) as pic:
     with Image.open(path) as pic:
         hw = pic.size[0] / 2
         hh = pic.size[1] / 2
