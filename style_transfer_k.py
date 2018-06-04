@@ -42,7 +42,7 @@ input_tensor=backend.concatenate([content_image,style_image,combination_image],a
 model = VGG16(input_tensor=input_tensor, weights='imagenet', include_top=False)
 
 content_weight = 0.05
-style_weight = 5.0
+style_weight = 10.0
 total_variation_weight = 1.0
 
 layers=dict([(layer.name, layer.output) for layer in model.layers])
