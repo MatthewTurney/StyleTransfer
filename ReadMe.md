@@ -16,4 +16,4 @@ Style Image (All credit to Leonid Afremov):
 <br />
 Result:
 <br />
-<img src="./matt_seattle.jpgloneliness_of_autumn.jpg.jpg" width="600">
+<img src="./jpg_jpg.jpg" width="400">
