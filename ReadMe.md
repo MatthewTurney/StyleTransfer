@@ -8,12 +8,12 @@ Both implementations ustilized a model based on the VGG16 architecture.
 <br />
 Content Image:
 <br />
-<img src="./matt_seattle.jpg" width="600">
+<img src="./images/inputs/matt_seattle.jpg" width="600">
 <br />
 Style Image (All credit to Leonid Afremov):
 <br />
-<img src="./loneliness_of_autumn.jpg" width="600">
+<img src="./images/inputs/loneliness_of_autumn.jpg" width="600">
 <br />
 Result:
 <br />
-<img src="./jpg_jpg.jpg" width="400">
+<img src="./images/outputs/jpg_jpg.jpg" width="400">
