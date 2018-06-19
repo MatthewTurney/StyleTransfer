@@ -29,7 +29,7 @@ def load_vgg(path):
     return layers
 
 
-path = 'vgg16_weights.h5'
+path = 'vgg16_weights.h5' # Path to downloaded pretrained vgg model
 url = 'https://cntk.ai/jup/models/vgg16_weights.bin'
 
 if not os.path.exists(path):
@@ -109,8 +109,8 @@ def total_variation_loss(x):
     avg = 0.5 * (C.reduce_mean(C.square(dv)) + C.reduce_mean(C.square(dh)))
     return avg
 
-style_path = 'p3.jpg'
-content_path = 'matt_seattle.jpg'
+style_path = 'p3.jpg' # PATH TO STYLE IMAGE
+content_path = 'matt_seattle.jpg' # PATH TO CONTENT IMAGE
 
 start_from_random = False
 content_weight = 5.0

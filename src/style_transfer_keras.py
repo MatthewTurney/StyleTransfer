@@ -7,8 +7,8 @@ from utils import *
 from scipy.optimize import fmin_l_bfgs_b
 from PIL import Image
 
-style_path = 'p3.jpg'
-content_path = 'm2.jpg'
+style_path = 'p3.jpg' # PATH TO STYLE IMAGE
+content_path = 'm2.jpg' # PATH TO CONTENT IMAGE
 
 height = 512
 width = 512
